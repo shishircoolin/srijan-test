@@ -2,23 +2,26 @@
 <html>
 <head>
   <title>Odometer Test</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="test"></div>
   <pre>
     var temp = 56287;
     var arr = [];
     for (var j = 0; j < temp; j++) {
       arr.push(j);
     }
-  </pre>
-  <code>
-    var temp = 56287;
-    var arr = [];
-    for (var j = 0; j < temp; j++) {
-      arr.push(j);
+    var i = 0,
+      len = arr.length,
+      reg = /(4)/g;
+    for (; i < len; i++) {
+      if (String(arr[i]).match(reg)) {
+        arr.splice(i, 1);
+      }
     }
-  </code>
+    document.querySelectorAll('.test')[0].textContent = "The actual reading on the Odometer is: " + arr.length;
+  </pre>
+  <div class="test"></div>
   <script src="script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
