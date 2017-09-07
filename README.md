@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Welcome to Srijan Test
 
-You can use the [editor on GitHub](https://github.com/shishircoolin/srijan-test/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+### Exercise 1
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+There is an odometer in a bike and it is broken in a way whenever there supposed to be value 4 in one of the 5 digits in odometer it skips that and shows 5. It is not able to display the digit 4. For example, if the odometer is at reading 32363 KM then next reading it will show is 32365 and not 32364 or if the odometer shows 39999 then next reading it will show is 5000 instead 4000. 
+So if odometer shows the current reading `56287` then what is its actual reading?
 
-### Markdown
+### Exercise 2
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We have a file which has `10 million` numbers put in randomly ranging from `0 to 99`.
+Sort the array and write it to another file without keeping the whole array into memory or reading the whole file at once and putting it in memory.
 
-```markdown
-Syntax highlighted code block
+### Exercise 3
 
-# Header 1
-## Header 2
-### Header 3
+There is an attached log file from one of the development web server. 
+Line number 2 of this log file is something like this "Processing by SprintsController#show as JSONAPI"
+This tells us, sprints controller's show action(method or function) ran. You have to parse this log file and output how many times the controller's action ran.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+`expected output:`
+```javascript
+SprintsController => show action ran 23 times
+SprintsController => index action ran 17 times
+and so on..
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shishircoolin/srijan-test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
